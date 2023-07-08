@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            
+            margin:  auto;
+           
+            width:30%;
+            justify-content: center;
+            text-align: center;
+
+        }
+        div{
+            margin: 10px auto;
+            justify-content: center;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form action="/get/user/Signup" method="post" >
+        <div class="mb-3">
+            <label for="firstName" class="form-label">Name:</label>
+            <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Enter the Name">
+        </div>
+    <div class="mb-3">
+        <label for="EmailID" class="form-label">Email-Address:</label>
+        <input type="email" class="form-control" id="EmailID" name="EmailID"  placeholder="name@example.com">
+    </div>
+    <label for="PASSWORD" class="form-label">Password:</label>
+    <input type="password" id="PASSWORD" class="form-control" name="PASSWORD" aria-labelledby="passwordHelpBlock">
+   
+    <div class="col-auto">
+        <button type="submit" class="btn btn-primary mb-3">Submit</button>
+    </div>
+</form>
+
+</body>
+</html>
+
+

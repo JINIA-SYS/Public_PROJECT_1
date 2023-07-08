@@ -1,0 +1,139 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+    *{
+
+        margin: 0px;
+        padding: 0px;
+    }
+
+    video{
+        width: 100vw;
+        height: 100vh;
+    }
+    body{
+        font-family: 'Kanit', sans-serif;
+    }
+   .container{
+   /* border: 12px solid black;*/
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    
+   }
+    .backvideo{
+        opacity: 0.7;
+        position: absolute; 
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+    .container h1{
+        /*border: 5px solid blue;*/
+        color: coral;
+        font-size: 40px;
+        margin-bottom: 40px;
+        padding: 20px;
+        
+    }
+    .box{
+        /*border: 3px solid yellow;*/
+        width:100%;
+        border-bottom: 4px solid greenyellow;
+    }
+
+    .box input{
+        width: 70%;
+        background: none;
+  
+        border-radius: 10px;
+        outline: none;
+       font-size: 20px;
+        font-weight: bold;
+        margin: 10px 50px;
+        padding: 10px 0px;
+        text-align: center;
+
+    }
+    .box input:hover{
+       color: black;
+        background-color:greenyellow;
+    }
+    .box i{
+        width: 3%;
+        
+        display: inline;
+        position: absolute;
+        margin: 10px 50px;
+        
+        padding: 20px 5px;
+      
+        
+    }
+    .box label{
+        display: block;
+       /* border: 2px solid green;*/
+        text-align: left;
+        margin: 0px 50px;
+        font-size: 25px;
+        color: coral;
+        width: 100%;
+    }
+
+    .btn{
+        cursor: pointer;
+        outline: none;
+        background: none;
+        color: greenyellow;
+        font-size: 25px;
+        font-weight: bold;
+        width:65%;
+        padding: 10px 0px;
+        /*border: 4px solid brown;*/
+        border-radius: 10px;
+        margin: 10px 70px;
+    }
+    .btn:hover{
+        background-color: greenyellow;
+        color: black;
+    }
+    .checkbox
+    {
+        margin: 10px 0px;
+    }
+    .checkbox a{
+      
+       position: absolute;
+       left: 55%;
+       color: white;
+       font-size: 18px;
+       font-weight: bold;
+       list-style: none;
+       text-decoration: none;
+
+    }
+    .checkbox input{
+        position: absolute;
+        left: 9%;
+        top: 77%;
+    }
+    .checkbox label{
+        font-weight: bold;
+        font-size: 18px;
+        margin:  0px 74px;
+    }
+    
+    @media (min-aspect-ratio:16/9)
+    {
+        .backvideo{
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    @media (max-aspect-ratio:16/9)
+    {
+        .backvideo{
+            width: auto;
+            height: 100%;
+        }
+    }

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            display: flex;
+            margin: 20px auto;
+            /*border: 3px solid black;*/
+           justify-content: center;
+           text-align: center;   
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+
+    <h1>URL SHORTNER WEBSITE</h1>
+    <form class="row g-3" method="post" action="/get/url/Home">
+        <div class="col-auto">
+            <label for="URL_Link" class="visually-hidden">Email</label>
+            <input type="text" name="URL_Link" id="URL_Link"
+                placeholder="Enter the Link">
+        </div>
+        <div class="col-auto">
+            <button type="submit" class="btn btn-primary mb-3">Submit</button>
+        </div>
+    </form>
+       
+        <% if(locals) { %>
+            <p><%= locals.status%>:- <%=locals.shortid  %> </p>
+            <p> URL_LINK GENERATED:http://localhost:8003/get/<%= locals.shortid %></p>
+         
+        <% } %>
+    
+   
+    
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Sr.No.</th>
+                      <th scope="col">SHORTID</th>
+                      <th scope="col">URL-Link</th>
+                      <th scope="col">CLICKS</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                      <% URL.forEach((element,i=0) => { %>
+                    <tr>
+                      <th scope="row"><%=i+1%></th>
+                      <td> <%= element.shortID %></td>
+                      <td><%= element.URL_Link %></td>
+                      <td> <%= element.CLICKTIME.length %></td>
+                    </tr>
+                    <% }) %>
+                  </tbody>
+                </table>
+        
+  
+   
+    
+    
+
+    
+  
+   
+</body>
+
+</html>

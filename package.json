@@ -1,0 +1,30 @@
+{
+  "name": "url_shortner",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "keywords": [
+    "Nothing",
+    "to",
+    "Worry",
+    "about",
+    "it"
+  ],
+  "author": "Mr Anonymous",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security",
+    "jsonwebtoken": "^9.0.1",
+    "mongoose": "^7.3.1",
+    "nodemon": "^2.0.22",
+    "path": "^0.12.7",
+    "shortid": "^2.2.16",
+    "uuid": "^9.0.0"
+  }
+}
