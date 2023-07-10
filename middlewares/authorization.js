@@ -8,4 +8,4 @@ function authorized_role(roles = []) {
     }
 }
 
-module.exports = { authorized_role }
+module.exports = { authorized_role }    

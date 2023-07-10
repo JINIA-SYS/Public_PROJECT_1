@@ -1,4 +1,2 @@
-logs.logs
-*.logs
-*.cpp
-ignoredirectory/
+node_modules/
+weatherapi/

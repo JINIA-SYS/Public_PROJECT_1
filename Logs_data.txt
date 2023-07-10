@@ -4063,3 +4063,9 @@ function now() { [native code] }:::1 GET:/get/views/video.mp4
 function now() { [native code] }:::1 POST:/get/user/Login
 function now() { [native code] }:::1 GET:/get/Home
 function now() { [native code] }:::1 GET:/get/admin
+function now() { [native code] }:::1 GET:/get/HOME
+function now() { [native code] }:::1 GET:/get/Login
+function now() { [native code] }:::1 GET:/get/views/video.mp4
+function now() { [native code] }:::1 GET:/favicon.ico
+function now() { [native code] }:::1 POST:/get/user/Login
+function now() { [native code] }:::1 GET:/get/Home
