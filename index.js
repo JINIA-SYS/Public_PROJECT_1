@@ -7,14 +7,14 @@ const URL_shortner = require("./models/mongoose_schema.js")
 
 //MONGODB Connection
 const { MONGODB_connect } = require("./mongoose_connect.js")
-MONGODB_connect("mongodb://127.0.0.1:27017/URL")
+MONGODB_connect(process.env.MONGODB??"mongodb://127.0.0.1:27017/URL")
 
 //EJS HTML TEMPALATE ENGINE SECTION
 app.set("view engine", "ejs")
 app.set("views", path.resolve("./views"))
 
 //SERVER-PORT SECTION
-const PORT = 8003;
+const PORT = process.env.PORT||8003;
 app.listen(PORT, () => {
     console.log(`Server Running at PORT: ${PORT}`)
 })
